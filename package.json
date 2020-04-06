@@ -1,0 +1,35 @@
+{
+    "name": "c2n3_c3n3",
+    "version": "1.0.0",
+    "description": "C'est un projet pour valider les compétences C3N3 (C2N3).",
+    "main": "index.js",
+    "scripts": {
+        "compile": "node-sass Starter-file/sass -o Starter-file/dist/css",
+        "watch": "node-sass -w Starter-file/sass -o Starter-file/dist/css",
+        "compress": "node-sass --output-style compressed Starter-file/sass -o Starter-file/dist/css",
+        "concat": "concat -o Starter-file/dist/css/concat.css Starter-file/dist/css/fichier.css Starter-file/dist/css/main.css",
+        "toPrefixed": "postcss --use autoprefixer -b 'last 5 versions' Starter-file/dist/css/concat.css -o Starter-file/dist/css/prefixed.css",
+        "build": "npm run compile && npm run compress && npm run concat && npm run toPrefixed"
+    },
+    "browserslist": [
+        "last 4 versions"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/HILMIONELL97/C2N3_C3N3.git"
+    },
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/HILMIONELL97/C2N3_C3N3/issues"
+    },
+    "homepage": "https://github.com/HILMIONELL97/C2N3_C3N3/#readme",
+    "dependencies": {
+        "node-sass": "^4.13.1"
+    },
+    "devDependencies": {
+        "autoprefixer": "^9.7.5",
+        "concat": "^1.0.3",
+        "postcss-cli": "^7.1.0"
+    }
+}
