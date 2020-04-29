@@ -9,19 +9,25 @@ footer {
         height: 170px;
         .herofooter__title {
             margin-top: 0.1rem;
+            text-align: center;
+            color: $primarycolor;
         }
         .herofooter__btn {
             width: 375px;
             margin-left: 36rem;
             margin-top: 2px;
             padding: 10px;
-            border: none;
+            border-color: $primarycolor;
             border-radius: 5px;
             text-transform: uppercase;
-            background-color: $DARKBLUE;
+            // background-color: $DARKBLUE;
             letter-spacing: 2px;
             font-weight: bold;
-            color: $WHITE;
+            color: $primarycolor;
+            &:hover {
+                background-color: $primarycolor;
+                color: $WHITE;
+            }
         }
     }
     .footer {

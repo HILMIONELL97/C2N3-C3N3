@@ -6,13 +6,18 @@
         body {
             font-family: 'Cairo', sans-serif;
             header {
-                flex-flow: wrap row;
+                flex-flow: nowrap row;
                 justify-content: space-between;
                 font-size: 1rem;
                 align-items: center;
                 max-width: 100%;
                 .header__bcg {
-                    background-image: url(/imgs/Mergedbar-40.png);
+                    background-image: url(/imgs/Mergedbar-1.svg);
+                    background-color: #96c5dc;
+                    position: fixed;
+                    top: 0;
+                    width: 100%;
+                    z-index: 1000;
                 }
                 .header__logo {
                     cursor: pointer;
@@ -23,8 +28,7 @@
                     float: right;
                     flex-wrap: wrap;
                     margin-right: 1rem;
-                    padding: 1%;
-                    margin-top: 1.5rem;
+                    margin-top: 1rem;
                 }
                 .header__menu a {
                     margin: 2rem;
@@ -40,22 +44,25 @@
                     color: $BLACK;
                 }
                 .header__menu__btn {
-                    background: none;
-                    color: $primarycolor;
-                    padding: 3%;
-                    border-color: $primarycolor;
+                    padding: 5px 10px 5px 10px;
+                    background-color: transparent;
                     border-radius: 10px;
-                    outline: none;
+                    color: rgb(26, 81, 158);
+                    border: 1px solid rgb(26, 81, 158);
+                    margin: 20px;
                     font-size: 20px;
-                    margin-left: 8px;
+                    text-decoration: none;
+                    outline: 0;
                     cursor: pointer;
                 }
                 .header__bcg1 {
                     background-color: $JEUNE;
+                    margin-top: 6.6rem;
                 }
                 h3 {
                     text-align: center;
                     color: $BLACK;
+                    font-weight: bold;
                 }
                 p {
                     display: flex;

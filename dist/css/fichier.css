@@ -5,13 +5,18 @@
 body {
   font-family: 'Cairo', sans-serif; }
   body header {
-    flex-flow: wrap row;
+    flex-flow: nowrap row;
     justify-content: space-between;
     font-size: 1rem;
     align-items: center;
     max-width: 100%; }
     body header .header__bcg {
-      background-image: url(/imgs/Mergedbar-40.png); }
+      background-image: url(/imgs/Mergedbar-1.svg);
+      background-color: #96c5dc;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 1000; }
     body header .header__logo {
       cursor: pointer;
       margin-left: 2%;
@@ -20,8 +25,7 @@ body {
       float: right;
       flex-wrap: wrap;
       margin-right: 1rem;
-      padding: 1%;
-      margin-top: 1.5rem; }
+      margin-top: 1rem; }
     body header .header__menu a {
       margin: 2rem;
       text-transform: uppercase;
@@ -33,20 +37,23 @@ body {
     body header .header__menu__CON {
       color: black; }
     body header .header__menu__btn {
-      background: none;
-      color: #1a519e;
-      padding: 3%;
-      border-color: #1a519e;
+      padding: 5px 10px 5px 10px;
+      background-color: transparent;
       border-radius: 10px;
-      outline: none;
+      color: #1a519e;
+      border: 1px solid #1a519e;
+      margin: 20px;
       font-size: 20px;
-      margin-left: 8px;
+      text-decoration: none;
+      outline: 0;
       cursor: pointer; }
     body header .header__bcg1 {
-      background-color: #f4d01a; }
+      background-color: #f4d01a;
+      margin-top: 6.6rem; }
     body header h3 {
       text-align: center;
-      color: black; }
+      color: black;
+      font-weight: bold; }
     body header p {
       display: flex;
       flex-direction: column;
@@ -56,22 +63,25 @@ body {
       font-weight: bold; }
 
 .container {
+  padding: 2rem;
   display: flex;
   flex-direction: row-reverse;
+  justify-content: space-around;
   margin-right: 30rem; }
   .container .card {
-    padding: 10% 0 0 90%;
+    padding: 10% 0 0 50%;
     height: 100%;
-    width: 100%;
+    width: 500px;
     line-height: 1.8rem;
-    margin-top: 1rem; }
+    margin-top: 1rem;
+    margin-right: 7rem; }
     .container .card .card__parag {
       text-align: center;
       color: #1a519e;
       font-size: 18px;
       font-weight: bold; }
     .container .card img {
-      margin-left: 8rem; }
+      margin-left: 13rem; }
     .container .card .card__parag--second {
       text-align: center;
       color: gray;
@@ -86,10 +96,15 @@ body {
       text-transform: uppercase;
       letter-spacing: 2px;
       font-weight: bold;
-      color: #1a519e; }
+      color: #1a519e;
+      cursor: pointer; }
       .container .card .card__btn:hover {
         background-color: #1a519e;
         color: white; }
+  .container .container__left--img {
+    width: 500px;
+    padding-left: 40%;
+    margin-top: 3rem; }
 
 h2 {
   text-align: center;
@@ -170,19 +185,23 @@ footer .herofooter {
   background-color: #96C5DC;
   height: 170px; }
   footer .herofooter .herofooter__title {
-    margin-top: 0.1rem; }
+    margin-top: 0.1rem;
+    text-align: center;
+    color: #1a519e; }
   footer .herofooter .herofooter__btn {
     width: 375px;
     margin-left: 36rem;
     margin-top: 2px;
     padding: 10px;
-    border: none;
+    border-color: #1a519e;
     border-radius: 5px;
     text-transform: uppercase;
-    background-color: #1078ad;
     letter-spacing: 2px;
     font-weight: bold;
-    color: white; }
+    color: #1a519e; }
+    footer .herofooter .herofooter__btn:hover {
+      background-color: #1a519e;
+      color: white; }
 
 footer .footer {
   display: flex;

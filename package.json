@@ -6,8 +6,8 @@
     "scripts": {
         "compile": "node-sass dist/sass -o dist/css",
         "watch": "node-sass -w dist/sass -o dist/css",
-        "compress": "node-sass --output-style compressed sass -o dist/css",
-        "concat": "concat -o dist/css/concat.css  dist/css/main.css",
+        "concat": "concat -o dist/css/concat.css  dist/css/main.css dist/css/style.css",
+        "compress": "node-sass dist/css/concat.css dist/css/compressed.css --output-style compressed",
         "toPrefixed": "postcss --use autoprefixer -b 'last 5 versions' dist/css/concat.css -o dist/css/prefixed.css",
         "build": "npm run compile && npm run compress && npm run concat && npm run toPrefixed"
     },

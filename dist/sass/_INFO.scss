@@ -1,6 +1,6 @@
 .protege {
     text-align: center;
-    line-height: 40px;
+    line-height: 30px;
     h1 {
         font-size: 32px;
         color: #1078AD;
@@ -12,7 +12,7 @@
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: 1fr 1fr;
-        align-items: flex-start;
+        align-items: flex-end;
         grid-row-gap: 40px;
         h2 {
             color: #1A519E;
@@ -34,7 +34,7 @@
     }
 }
 
-// ::::::::::::::::::::::::::::::::::  information section
+// ::::::::::::::::::::::::::::::::::  information section ::::::::::::::::::::::::::::::::::::::://
 .information {
     margin: 0 auto;
     background-color: #D0E5F0;
