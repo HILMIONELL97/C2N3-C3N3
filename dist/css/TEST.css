@@ -149,7 +149,8 @@ body {
   padding: 55px 15% 10px;
   display: flex;
   text-align: center;
-  justify-content: space-evenly; }
+  justify-content: space-between;
+  margin-top: 9rem; }
   .stepper h1 {
     font-size: 20px;
     color: #1078AD;
@@ -226,7 +227,7 @@ body {
       height: 10px;
       border-radius: 20px;
       background-color: #e6f1f7;
-      overflow: hidden; }
+      overflow: visible; }
       .questionnaire .progress__bar .bar {
         height: 100%;
         width: calc(1 * calc(100% / 22));
@@ -295,12 +296,6 @@ body {
     .btn-container button:hover {
       background-color: #1a519e;
       color: white; }
-    .btn-container button:disabled {
-      cursor: not-allowed;
-      opacity: .65; }
-      .btn-container button:disabled:hover {
-        background-color: #cfe4ef;
-        color: #1a519e; }
 
 footer .logo {
   margin-left: 44rem; }
