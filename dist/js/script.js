@@ -362,9 +362,9 @@ let questions = [{
     },
 ];
 
-let testBtn = document.querySelector(".start");
-let questionnaire = document.querySelector(".questionnaire");
-let Préambule = document.querySelector(".Préambule");
+let testBtn = document.getElementById("start");
+let questionnaire = document.getElementById("questionnaire");
+let Préambule = document.getElementById("Préambule");
 let stepper = document.querySelectorAll(".stepper h1");
 let nextBtn = document.querySelector(".next");
 let previousBtn = document.querySelector(".previous");
@@ -381,8 +381,8 @@ console.log(resultMessage[0]);
 
 testBtn.addEventListener("click", startTest);
 
-inputBox.addEventListener("change", (e) => {
-    let input = e.target;
+inputBox.addEventListener("change", (event) => {
+    let input = event.target;
 
     if (input.type === "number") {
         let number = parseFloat(input.value);
@@ -483,7 +483,7 @@ function folowProgress(number) {
     let currentNmber = number + 1;
 
     questionNumber.innerText = currentNmber;
-    progressBar.style.width = `${(100 / 22) * number}%`;
+    progressBar.style.width = `${(100 / 23) * (number + 1)}%`;
 }
 
 let answers = {};
@@ -556,4 +556,47 @@ function showResult(counter) {
         resultMessage[0].style.fontSize = "50px";
         resultMessage[0].style.fontWeight = "bold";
     }
+}
+
+function getResult(answers, _counter) {
+    //symptomes positive
+
+    let fievre = answers["Q1"] === "oui";
+    let toux = answers["Q3"] === "oui";
+    let malGorge = answers["Q5"] === "oui";
+    let courbatures = answers["Q4"] === "oui";
+    let diarrhee = answers["Q6"] === "oui";
+
+    //symptomes négatives
+
+    let noFievre = answers["Q1"] === "non";
+    let noToux = answers["Q3"] === "non";
+    let noMalGorge = answers["Q5"] === "non";
+    let noCourbatures = answers["Q4"] === "non";
+    let noDiarrhee = answers["Q6"] === "non";
+
+    //gravité mineures positives
+
+    let hauteFievre = answers["Q2"] > 39;
+    let fatigue = answers["Q8"] === "oui";
+    let malaise =
+        answers["Q11"] === "fatigué" || answers["Q11"] === "trop-fatigué";
+
+    //gravité mineures négatives
+
+    let noHauteFievre = answers["Q2"] < 39;
+    let noFatigue = answers["Q8"] === "non";
+    let noMalaise = answers["Q11"] === "bien" || answers["Q11"] === "moyen";
+
+    // gravité majeures positives
+
+    let basseFievre = answers["Q2"] < 35.4;
+    let gene = answers["Q10"] === "oui";
+    let diffAlim = answers["Q9"] === "oui";
+
+    // gravité majeures négatives
+
+    let noBasseFievre = answers["Q2"] > 35.4;
+    let noGene = answers["Q10"] === "non";
+    let noDiffAlim = answers["Q9"] === "non";
 }
