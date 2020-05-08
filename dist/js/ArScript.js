@@ -317,8 +317,8 @@ let progressBar = document.querySelector(".bar");
 let questionNumber = document.querySelector(".question-number");
 let inputBox = document.querySelector(".inputBox");
 
-let result = document.querySelector(".Préambule h1");
-let resultMessage = document.querySelectorAll(".Préambule p");
+let result = document.querySelector("#Préambule h1");
+let resultMessage = document.querySelectorAll("#Préambule p");
 
 console.log(resultMessage[0]);
 
