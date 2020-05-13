@@ -19,11 +19,6 @@
                     width: 100%;
                     z-index: 1000;
                 }
-                .header__logo {
-                    cursor: pointer;
-                    margin-left: 2%;
-                    padding: 1% 0 0 1%;
-                }
                 .header__menu {
                     float: right;
                     flex-wrap: wrap;
@@ -57,7 +52,7 @@
                 }
                 .header__bcg1 {
                     background-color: $JEUNE;
-                    margin-top: 6.6rem;
+                    margin-top: 5.8rem;
                 }
                 h3 {
                     text-align: center;
@@ -72,5 +67,14 @@
                     color: $primarycolor;
                     font-weight: bold;
                 }
+            }
+            a.header__logo {
+                margin-left: 2rem;
+                padding: 1% 0 0 1%;
+                cursor: pointer;
+                text-transform: uppercase;
+                text-decoration: none;
+                color: #000;
+                font-weight: bold;
             }
         }

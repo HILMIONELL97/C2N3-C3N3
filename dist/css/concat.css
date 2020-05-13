@@ -15,11 +15,8 @@ body {
       background-color: #96c5dc;
       position: fixed;
       top: 0;
-      width: 100%; }
-    body header .header__logo {
-      cursor: pointer;
-      margin-left: 2%;
-      padding: 1% 0 0 1%; }
+      width: 100%;
+      z-index: 1000; }
     body header .header__menu {
       float: right;
       flex-wrap: wrap;
@@ -48,7 +45,7 @@ body {
       cursor: pointer; }
     body header .header__bcg1 {
       background-color: #f4d01a;
-      margin-top: 6.6rem; }
+      margin-top: 5.8rem; }
     body header h3 {
       text-align: center;
       color: black;
@@ -60,6 +57,14 @@ body {
       line-height: 1.8rem;
       color: #1a519e;
       font-weight: bold; }
+  body a.header__logo {
+    margin-left: 2rem;
+    padding: 1% 0 0 1%;
+    cursor: pointer;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #000;
+    font-weight: bold; }
 
 .container {
   padding: 2rem;
@@ -184,7 +189,9 @@ footer .herofooter {
   background-color: #96C5DC;
   height: 170px; }
   footer .herofooter .herofooter__title {
-    margin-top: 0.1rem; }
+    margin-top: 0.1rem;
+    text-align: center;
+    color: #1a519e; }
   footer .herofooter .herofooter__btn {
     width: 375px;
     margin-left: 36rem;
@@ -347,11 +354,8 @@ body {
       background-color: #96c5dc;
       position: fixed;
       top: 0;
-      width: 100%; }
-    body header .header__logo {
-      cursor: pointer;
-      margin-left: 2%;
-      padding: 1% 0 0 1%; }
+      width: 100%;
+      z-index: 1000; }
     body header .header__menu {
       float: right;
       flex-wrap: wrap;
@@ -380,7 +384,7 @@ body {
       cursor: pointer; }
     body header .header__bcg1 {
       background-color: #f4d01a;
-      margin-top: 6.6rem; }
+      margin-top: 5.8rem; }
     body header h3 {
       text-align: center;
       color: black;
@@ -392,6 +396,14 @@ body {
       line-height: 1.8rem;
       color: #1a519e;
       font-weight: bold; }
+  body a.header__logo {
+    margin-left: 2rem;
+    padding: 1% 0 0 1%;
+    cursor: pointer;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #000;
+    font-weight: bold; }
 
 section .err {
   display: flex;
@@ -433,7 +445,9 @@ footer .herofooter {
   background-color: #96C5DC;
   height: 170px; }
   footer .herofooter .herofooter__title {
-    margin-top: 0.1rem; }
+    margin-top: 0.1rem;
+    text-align: center;
+    color: #1a519e; }
   footer .herofooter .herofooter__btn {
     width: 375px;
     margin-left: 36rem;

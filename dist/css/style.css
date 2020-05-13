@@ -17,10 +17,6 @@ body {
       top: 0;
       width: 100%;
       z-index: 1000; }
-    body header .header__logo {
-      cursor: pointer;
-      margin-left: 2%;
-      padding: 1% 0 0 1%; }
     body header .header__menu {
       float: right;
       flex-wrap: wrap;
@@ -49,7 +45,7 @@ body {
       cursor: pointer; }
     body header .header__bcg1 {
       background-color: #f4d01a;
-      margin-top: 6.6rem; }
+      margin-top: 5.8rem; }
     body header h3 {
       text-align: center;
       color: black;
@@ -61,6 +57,14 @@ body {
       line-height: 1.8rem;
       color: #1a519e;
       font-weight: bold; }
+  body a.header__logo {
+    margin-left: 2rem;
+    padding: 1% 0 0 1%;
+    cursor: pointer;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #000;
+    font-weight: bold; }
 
 section .err {
   display: flex;
